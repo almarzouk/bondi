@@ -1,0 +1,247 @@
+//Start Navbar
+.navbar {
+  background-color: var(--dark-color);
+  .container {
+    .fa-bars {
+      color: white;
+    }
+  }
+}
+.navbar-nav {
+  & .nav-item {
+    & .nav-link {
+      color: white;
+      position: relative;
+      font-size: 1.6rem;
+      font-weight: 400;
+      &.active,
+      &:focus,
+      &:hover {
+        color: var(--green-color);
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: var(--green-color);
+        height: 3px;
+        width: 0;
+        left: 8px;
+        bottom: -5px;
+        transition: 0.4s;
+      }
+      &:hover::after {
+        width: 80%;
+      }
+    }
+  }
+}
+//End Navbar
+// Start Landing
+.landing {
+  background-color: var(--dark-color);
+  min-height: calc(100vh - 60.25px);
+  & h1 {
+    font-size: 4rem;
+  }
+  & p {
+    font-size: 1.6rem;
+  }
+}
+// End Landing
+// Start Our work
+.our-work {
+  background-color: var(--section-color);
+  ul {
+    margin-bottom: 8rem;
+    .active {
+      background-color: var(--red-color);
+      color: var(--yellow-color);
+    }
+    li {
+      padding: 0.5rem 1.5rem;
+      font-size: 1.4rem;
+      font-weight: bold;
+      cursor: pointer;
+      &:not(.active):hover {
+        color: var(--red-color);
+      }
+    }
+  }
+}
+// End Our work
+// Start Stuff
+.stuff {
+  .description {
+    font-size: 1.6rem;
+    max-width: 500px;
+  }
+  .text {
+    h4 {
+      font-size: 3.5rem;
+    }
+    p {
+      max-width: 500px;
+      margin: 2rem auto;
+      font-size: 1.6rem;
+    }
+  }
+}
+// End Stuff
+// Start Team
+.team {
+  padding: 5rem;
+  background-color: var(--section-color);
+
+  .box {
+    .image {
+      position: relative;
+      overflow: hidden;
+      transition: 0.3s;
+      &::before {
+        content: "";
+        position: absolute;
+        background-color: rgb(53 209 204 / 80%);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--section-color);
+        transition: 0.3s;
+        transform: translateX(calc(100%));
+      }
+      &:hover::before {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  .main-title {
+    padding-top: 5rem;
+  }
+
+  .desc {
+    font-size: 1.6rem;
+    margin: 5rem auto;
+  }
+  h4 {
+    background-color: var(--green-color);
+    padding: 2rem;
+    font-size: 2rem;
+    color: white;
+  }
+  blockquote {
+    max-height: 200px;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+  }
+}
+// End Team
+// start logo
+.logos {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  .image {
+    padding: 4rem;
+    max-width: 150px;
+  }
+}
+// end logo
+// Start project
+.pro {
+  background-color: var(--dark-color);
+  margin-top: 5rem;
+  padding: 10rem 0;
+  .container {
+    h1 {
+      color: white;
+      padding-bottom: 1rem;
+      font-size: 3.5rem;
+    }
+    p {
+      color: white;
+      font-size: 1.6rem;
+    }
+  }
+}
+// start blog
+.blog {
+  h4 {
+    color: var(--dark-color);
+  }
+}
+
+// Start subscribe
+.subscribe {
+  .form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+  h2 {
+    @media (max-width: 768px) {
+      margin-top: 5rem;
+    }
+  }
+  .btn {
+    @media (max-width: 768px) {
+      margin-bottom: 5rem;
+    }
+  }
+  background-color: var(--yellow-color);
+  input {
+    border: hidden;
+    width: 400px;
+    align-self: stretch;
+    background-color: var(--yellow-color);
+    color: white;
+    font-size: 1.6rem;
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+  .form-group {
+    margin: 5rem;
+    border-bottom: 1px white solid;
+    outline: none;
+  }
+}
+// End Blog
+// Start Footer
+.footer {
+  background-color: var(--dark-color);
+  img {
+    max-width: 80px;
+    top: -2rem;
+  }
+  .para {
+    top: 6rem;
+  }
+  .social {
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
+  }
+  .copyright {
+    top: 16rem;
+    & > span {
+      color: var(--green-color);
+    }
+    .copy {
+      span {
+        color: var(--yellow-color);
+      }
+    }
+  }
+}
+// End Footer

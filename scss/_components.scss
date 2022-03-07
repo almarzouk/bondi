@@ -1,0 +1,119 @@
+// Start navbar
+.navbar {
+  max-height: 72px;
+  .container {
+    img {
+      max-width: 7rem;
+    }
+  }
+  .navbar-toggler {
+    color: white;
+    font-size: 2.5rem;
+    border-color: white;
+    &:focus {
+      box-shadow: none;
+    }
+    &[aria-expanded="true"] {
+      border-color: var(--green-color);
+    }
+  }
+  .search {
+    border-left: 1px solid var(--green-color);
+    svg {
+      color: var(--green-color);
+      font-size: 1.5rem;
+    }
+  }
+}
+// End navbar
+// Start btn
+.btn {
+  font-size: 1.6rem;
+  padding: 0.5rem 1.5rem;
+}
+// End BTN
+// Start main title
+.main-title {
+  margin-bottom: 5rem;
+  svg {
+    font-size: 4rem;
+    color: var(--yellow-color);
+    font-weight: 100;
+  }
+  h1 {
+    font-size: 4rem;
+    padding-bottom: 1.2rem;
+  }
+  p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  &::after {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+// end main title
+.features {
+  .icon-holder {
+    height: 200px;
+
+    svg {
+      left: 50%;
+      transform: translateX(-50%);
+      padding-bottom: 1rem;
+    }
+    .number {
+      font-size: 20rem;
+      color: var(--section-color);
+    }
+    .icon {
+      color: var(--green-color);
+      font-size: 8rem;
+    }
+  }
+  h4 {
+    font-size: 2rem;
+    color: var(--yellow-color);
+  }
+  p {
+    line-height: 2;
+    font-size: 1.6rem;
+    margin: 1rem 5rem;
+  }
+}
+// start our-work
+.our-work {
+  .box {
+    padding: 0.5rem;
+    overflow: hidden;
+    position: relative;
+    &::before {
+      content: attr(date-work);
+      position: absolute;
+      background-color: rgb(53 209 204 / 80%);
+      width: calc(100% - 1rem);
+      height: calc(100% - 1rem);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      color: var(--section-color);
+      font-weight: 400;
+      text-shadow: 1px 1px var(--dark-color);
+      transition: 0.3s;
+      transform: translateX(calc(100% + 0.5rem));
+    }
+    &:hover::before {
+      transform: translateX(0);
+    }
+  }
+}
+// start our-work

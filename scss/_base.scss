@@ -1,0 +1,46 @@
+// variables
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+// BTN
+.main-btn {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  padding: 0.5rem 1rem;
+  &:hover {
+    color: var(--dark-color);
+    background-color: var(--yellow-color);
+  }
+}
+.sec-btn {
+  background-color: var(--dark-color);
+  color: var(--section-color);
+  padding: 0.5rem 1rem;
+  &:hover {
+    color: var(--dark-color);
+    background-color: var(--section-color);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+}
